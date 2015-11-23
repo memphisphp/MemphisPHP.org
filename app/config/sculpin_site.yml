@@ -5,5 +5,5 @@ title: MemphisPHP
 subtitle: Memphis PHP User Group
 
 # Insert your disqus shortname
-#disqus:
-#    shortname:
+disqus:
+    shortname: memphisphporg
