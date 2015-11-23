@@ -96,6 +96,53 @@
             </div>
         </nav><!-- .site-navigation .main-navigation -->
     </header><!-- #masthead .site-header -->
+
+    <div id="main-slider" data-stretch="true"><!-- meta slider -->
+        <div style="width: 100%;" class="metaslider metaslider-responsive metaslider-20 ml-slider">
+            <div id="metaslider_container_20">
+                <ul id="metaslider_20" class="rslides">
+                    <li>
+                        <img src="/{{ theme_path('assets/02-26-12-highres_209115882-1210x400.jpeg') }}" height="400" width="1210" alt="" class="slider-20 slide-21" />
+                        <div class="caption-wrap">
+                            <div class="caption">Jordan Kasper giving a talk at MemphisPHP</div>
+                        </div>
+                    </li>
+                    <li style="display: none;">
+                        <img src="/{{ theme_path('assets/highres_276930652-1210x400.jpeg') }}" height="400" width="1210" alt="" class="slider-20 slide-23" />
+                        <div class="caption-wrap">
+                            <div class="caption">David Haskins giving at talk at MemphisPHP</div>
+                        </div>
+                    </li>
+                    <li style="display: none;">
+                        <img src="/{{ theme_path('assets/11-27-12-1210x400.jpeg') }}" height="400" width="1210" alt="" class="slider-20 slide-22" />
+                        <div class="caption-wrap">
+                            <div class="caption">Joe Ferguson giving a talk at MemphisPHP</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                var metaslider_20 = function($) {
+                    $("#metaslider_20").responsiveSlides({
+                        timeout:3000,
+                        pager:false,
+                        nav:true,
+                        pause:true,
+                        speed:600,
+                        prevText:"&lt;",
+                        nextText:"&gt;",
+                        auto:true
+                    });
+                };
+                var timer_metaslider_20 = function() {
+                    var slider = !window.jQuery ? window.setTimeout(timer_metaslider_20, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_20, 1) : metaslider_20(window.jQuery);
+                };
+                timer_metaslider_20();
+            </script>
+        </div>
+        <!--// meta slider-->
+    </div>
+
     <div id="main" class="site-main">
         <div class="full-container">
 
@@ -154,36 +201,6 @@
                         </a>
                     </div>
                 </aside>
-                <aside id="recent-comments-2" class="widget widget_recent_comments">
-                    <h3 class="widget-title">Recent Comments</h3>
-                    <ul id="recentcomments">
-
-                    </ul>
-                </aside>
-                <aside id="archives-2" class="widget widget_archive">
-                    <h3 class="widget-title">Archives</h3>
-                    <ul>
-                        <li><a href="https://www.memphisphp.org/2015/11/">November 2015</a></li>
-                        <li><a href="https://www.memphisphp.org/2015/02/">February 2015</a></li>
-                        <li><a href="https://www.memphisphp.org/2014/06/">June 2014</a></li>
-                        <li><a href="https://www.memphisphp.org/2014/05/">May 2014</a></li>
-                        <li><a href="https://www.memphisphp.org/2014/02/">February 2014</a></li>
-                        <li><a href="https://www.memphisphp.org/2014/01/">January 2014</a></li>
-                    </ul>
-                </aside>
-                <aside id="categories-2" class="widget widget_categories">
-                    <h3 class="widget-title">Categories</h3>
-                    <ul>
-                        <li class="cat-item cat-item-4">
-                            <a href="https://www.memphisphp.org/category/meet-ups/" >Meet Ups</a>
-                        </li>
-                        <li class="cat-item cat-item-3">
-                            <a href="https://www.memphisphp.org/category/news/" >News</a>
-                        </li>
-                        <li class="cat-item cat-item-9">
-                            <a href="https://www.memphisphp.org/category/videos/" >Videos</a>
-                        </li>
-                    </ul>
             </div><!-- #secondary .widget-area -->
         </div><!-- .full-container -->
     </div><!-- #main .site-main -->
