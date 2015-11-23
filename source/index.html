@@ -7,27 +7,56 @@ pagination:
 use:
     - posts
 ---
-{% for post in page.pagination.items %}
-    <article>
-        <header>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <div>
-            {{ post.blocks.content|raw }}
+
+<div id="content" class="site-content" role="main">
+    <article id="post-4" class="post-4 page type-page status-publish hentry post">
+        <div class="entry-main">
+            <header class="entry-header">
+                <h1 class="entry-title">Home</h1>
+            </header><!-- .entry-header -->
+
+            <div class="entry-content">
+                <p>Are you a PHP Developer in Memphis? Are you just curious about PHP? Come meet other MemphisPHP developers at our monthly meet ups.</p>
+                <p>We meet on the 4th Tuesday of each month.</p>
+                <p>
+                    MemphisPHP is a community of PHP developers and open source enthusiasts in the Memphis, TN area founded May 23, 2010 by <a href="http://jeremykendall.net/" target="_blank">Jeremy Kendall</a>.
+                </p>
+                <p>
+                    <a href="https://twitter.com/DavidAHaskins" target="_blank">David Haskins</a> and <a href="http://www.joeferguson.me" target="_blank">Joe Ferguson</a> became Co-organizers after Jeremy Stepped down
+                </p>
+                <p>The current organizer is <a href="http://www.joeferguson.me" target="_blank">Joe Ferguson</a></p>
+                <p><strong>Interact with us:</strong></p>
+                <p>
+                    Join us on IRC; we&#8217;re in #Memphisphp on Freenode!<br />
+                    Find us on Google+ <a href="https://plus.google.com/105237978631136974793" target="_blank">https://plus.google.com/1052379786311369747&#8230;</a><br />
+                    Find us on Twitter: <a href="http://twitter.com/MemphisPHP/" target="_blank">@MemphisPHP</a>
+                </p>
+            </div><!-- .entry-content -->
         </div>
-        {% if post.meta.tags %}
-            <p class="tags">
-            Tags:
-            {% for tag in post.meta.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-            </p>
-        {% endif %}
-    </article>
-{% endfor %}
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav>
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
-    </nav>
-{% endif %}
+    </article><!-- #post-4 -->
+</div><!-- #content .site-content -->
+
+<!--{% for post in page.pagination.items %}-->
+    <!--<article>-->
+        <!--<header>-->
+            <!--<h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>-->
+        <!--</header>-->
+        <!--<div>-->
+            <!--{{ post.blocks.content|raw }}-->
+        <!--</div>-->
+        <!--{% if post.meta.tags %}-->
+            <!--<p class="tags">-->
+            <!--Tags:-->
+            <!--{% for tag in post.meta.tags %}-->
+            <!--<a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}-->
+            <!--{% endfor %}-->
+            <!--</p>-->
+        <!--{% endif %}-->
+    <!--</article>-->
+<!--{% endfor %}-->
+<!--{% if page.pagination.previous_page or page.pagination.next_page %}-->
+    <!--<nav>-->
+        <!--{% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />-->
+        <!--{% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />-->
+    <!--</nav>-->
+<!--{% endif %}-->
