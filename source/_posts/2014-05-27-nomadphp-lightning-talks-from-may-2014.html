@@ -8,11 +8,28 @@ categories:
     - Videos
 tags: {  }
 ---
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        <h1><strong>What RabbitMQ Can Do For You</strong></h1>
+        &nbsp;
+        <iframe width="560" height="315" src="//www.youtube.com/embed/4lDSwfrfM-I" frameborder="0" allowfullscreen></iframe>
 
-<h1><strong>What RabbitMQ Can Do For You</strong></h1>
-&nbsp;
-<iframe width="560" height="315" src="//www.youtube.com/embed/4lDSwfrfM-I" frameborder="0" allowfullscreen></iframe>
+        <h1><strong>Selenium Testing</strong></h1>
+        &nbsp;
+        <iframe width="560" height="315" src="//www.youtube.com/embed/LIzyhP-YGyY" frameborder="0" allowfullscreen></iframe>
 
-<h1><strong>Selenium Testing</strong></h1>
-&nbsp;
-<iframe width="560" height="315" src="//www.youtube.com/embed/LIzyhP-YGyY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>

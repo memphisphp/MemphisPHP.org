@@ -7,7 +7,24 @@ categories:
     - 'Meet Ups'
 tags: {  }
 ---
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        At our February monthly meetup We will be talking about Workflows. Come show off your workflow, code editor, and any other tools you use to work on your projects. Come ready to spend 15 minutes talking about your process. Joe Ferguson will be talking about his process including Vagrant, Phpstorm, Git, and more!
 
-At our February monthly meetup We will be talking about Workflows. Come show off your workflow, code editor, and any other tools you use to work on your projects. Come ready to spend 15 minutes talking about your process. Joe Ferguson will be talking about his process including Vagrant, Phpstorm, Git, and more!
+        <span style="line-height: 1.5em;">RSVP here: <a href="http://www.meetup.com/memphis-technology-user-groups/events/djdwhhysdbhc/">http://www.meetup.com/memphis-technology-user-groups/events/djdwhhysdbhc/</a></span>
 
-<span style="line-height: 1.5em;">RSVP here: <a href="http://www.meetup.com/memphis-technology-user-groups/events/djdwhhysdbhc/">http://www.meetup.com/memphis-technology-user-groups/events/djdwhhysdbhc/</a></span>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>

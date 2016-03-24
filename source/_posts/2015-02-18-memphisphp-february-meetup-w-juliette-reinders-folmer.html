@@ -8,26 +8,41 @@ categories:
 tags: {  }
 ---
 
-<div id="content" class="site-content" role="main">
-    <p>
-    This month we will have a very special guest: Juliette Reinders Folmer:
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        <p>
+            This month we will have a very special guest: Juliette Reinders Folmer:
+        </p>
+        <p>
+            So you think you know PHP ? But do you really ?
+        </p>
+        <p>
+            We all compare and test data on nearly every other line in our code, be it input validation, an if-statement, a switch or determining what to display and how. So of course we are all experts on how to do these tests and comparisons…. Or are we?
+        </p>
+        <p>
+            No matter whether you are a beginner or an expert, come and join in the fun for the Big “Why equal doesn’t equal” Quiz, test your knowledge and learn about defensive programming and the quirks of a loose type programming language along the way.
+        </p>
+        <p>
+            About Juliette:
+        </p>
+        <p>
+            Juliette Reinders Folmer is an all round consultant and web-developer who tries not be a geek. Juliette is a long-standing member of PHPWomen which helped her immensely to find her feet in the PHP world. She is ZCE, actively contributes to a number of open source projects, has published several articles and speaks at conferences when given the chance.
+        </p>
+        <p>
+            Juliette is self-employed and based in the Netherlands. When not working for customers or on open source projects, she is the project manager of the worldwide 'Remember me when I'm gone' non-profit project or out raising funds for Stop AIDS Now!
+        </p>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
     </p>
-    <p>
-    So you think you know PHP ? But do you really ?
-    </p>
-    <p>
-    We all compare and test data on nearly every other line in our code, be it input validation, an if-statement, a switch or determining what to display and how. So of course we are all experts on how to do these tests and comparisons…. Or are we?
-    </p>
-    <p>
-    No matter whether you are a beginner or an expert, come and join in the fun for the Big “Why equal doesn’t equal” Quiz, test your knowledge and learn about defensive programming and the quirks of a loose type programming language along the way.
-    </p>
-    <p>
-    About Juliette:
-    </p>
-    <p>
-    Juliette Reinders Folmer is an all round consultant and web-developer who tries not be a geek. Juliette is a long-standing member of PHPWomen which helped her immensely to find her feet in the PHP world. She is ZCE, actively contributes to a number of open source projects, has published several articles and speaks at conferences when given the chance.
-    </p>
-    <p>
-    Juliette is self-employed and based in the Netherlands. When not working for customers or on open source projects, she is the project manager of the worldwide 'Remember me when I'm gone' non-profit project or out raising funds for Stop AIDS Now!
-    </p>
-</div>
+    {% endif %}
+</article>

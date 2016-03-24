@@ -8,7 +8,26 @@ categories:
 tags: {  }
 ---
 
-<h1><strong>Deploying PHP Applications to Pagodabox </strong></h1>
-<iframe src="//www.youtube.com/embed/k4GiLlEOWXk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-<h1><strong> PHP & Enums </strong></h1>
-<iframe src="//www.youtube.com/embed/kdWRyl6x6JQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+
+        <h1><strong>Deploying PHP Applications to Pagodabox </strong></h1>
+        <iframe src="//www.youtube.com/embed/k4GiLlEOWXk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <h1><strong> PHP & Enums </strong></h1>
+        <iframe src="//www.youtube.com/embed/kdWRyl6x6JQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>
