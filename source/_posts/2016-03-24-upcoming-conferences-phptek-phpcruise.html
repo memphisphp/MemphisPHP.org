@@ -1,0 +1,58 @@
+---
+title: 'Upcoming Conferences - php[tek] and php[cruise]'
+date: '2016-03-24 12:47:10'
+layout: post
+slug: upcoming-conferences-phptek-phpcruise
+categories:
+    - 'Conferences'
+tags: {  }
+---
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        <h2>php[tek] 2016 St. Louis — May 23-27, 2016</h2>
+        <p>
+            Wanted to go to a PHP Conference but always frustrated that they're just outside easy driving distance of Memphis? Me too!
+        </p>
+        <p>
+            The fine folks at <a href="http://www.phparch.com" target="_blank">php[architect]</a> have solved this problem for us. The annual <a href="http://tek.phparch.com" target="_blank">php[tek]</a> conference has been moved to St. Louis, MO!
+            With St. Louis being a mere ~4 hour drive away this is an easy drive to an amazing conference.
+        </p>
+        <p>
+            If you have never been to a PHP conference php[tek] is a great one to be your first.
+            Our own Jeremy Kendall started this user group after attending php[tek]. My own first PHP conference was php[tek] 2014 and it was a blast.
+            They have an <a href="https://tek.phparch.com/schedule/" target="_blank">amazing schedule</a> (I admit I'm biased - I'm a speaker)
+            and they're doing a special 2 day "PHP Essentials" training session for those new to PHP.
+            I'll be giving my Laravel training session and a regular talk during the conference.
+        </p>
+        <p>
+            To make the offer even better they have offered me a special price for anyone coming from the Memphis area. You have to contact me and I'll put you in touch!
+        </p>
+        <p>
+            <a href="https://tek.phparch.com/" target="_blank">php[tek] 2016</a>
+        </p>
+
+        <h2>php[cruise] Out of Baltimore, MD - July 17-24, 2016</h2>
+        <p>
+            After you've made your plans to join me at php[tek] in May, go ahead and make you reservations to <a href="https://cruise.phparch.com/" target="_blank">join me on a boat</a>!
+            This special event won't happen again anytime soon and our good friend Cal Evans will be giving a one time only talk on the cruise.
+            Bring the family or friends along, there will be days in ports and days at sea.
+        </p>
+        <p>
+            <a href="https://cruise.phparch.com/" target="_blank">php[cruise]</a>
+        </p>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>
+
