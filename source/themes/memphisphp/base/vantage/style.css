@@ -9,7 +9,9 @@ License: GNU General Public License 2.0
 License URI: license.txt
 Tags: responsive-layout, fluid-layout, custom-background, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, black, white, light, one-column, two-columns, full-width-template
 */
-
+/* Orange: #cb4d27 */
+/* Green: #2aa198 */
+/* Dark Background: #183a5c */
 /* =Reset
 -------------------------------------------------------------- */
 html,
@@ -157,7 +159,7 @@ textarea {
 }
 /* Links */
 a {
-  color: #248cc8;
+  color: #2aa198;
 }
 a:hover,
 a:focus,
@@ -478,7 +480,7 @@ body {
   }
 }
 #masthead {
-  background: #fcfcfc;
+  background: #183a5c;
   padding: 0 35px 0 35px;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -498,8 +500,8 @@ body {
 #masthead .hgroup {
   zoom: 1;
   position: relative;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 #masthead .hgroup:before {
   content: '';
@@ -533,7 +535,7 @@ body {
   right: 0;
   top: 50%;
   margin-top: -0.6em;
-  color: #4b4b4b;
+  color: #2aa198;
   font-style: italic;
   max-width: 50%;
 }
@@ -837,7 +839,7 @@ body.responsive.layout-full #page-wrapper .full-container {
 ----------------------------------------------- */
 .main-navigation {
   margin: 0 -35px;
-  background: #343538;
+  background: #2aa198;
   position: relative;
   font-size: 0;
   /* Font awesome icons */
@@ -877,7 +879,7 @@ body.responsive.layout-full #page-wrapper .full-container {
   position: relative;
 }
 .main-navigation ul li:hover > a {
-  background: #00bcff;
+  background: #cb4d27;
   color: #ffffff;
 }
 .main-navigation ul li a {
@@ -917,7 +919,7 @@ body.responsive.layout-full #page-wrapper .full-container {
   /* Hovering over 2nd level items */
 }
 .main-navigation ul ul li:hover > a {
-  background: #00bcff;
+  background: #cb4d27;
   color: #ffffff;
 }
 .main-navigation ul ul ul {
@@ -1005,7 +1007,7 @@ body.so-vantage-mobile-device .main-navigation li:hover > ul {
   color: #d1d1d1;
 }
 #search-icon #search-icon-icon:hover {
-  background-color: #00bcff;
+  background-color: #cb4d27;
 }
 #search-icon #search-icon-icon:hover .vantage-icon-search {
   color: #ffffff;
@@ -1045,7 +1047,7 @@ article.sticky {
   /* Style a sticky post */
 }
 #page-title {
-  color: #3b3b3b;
+  color: #cb4d27;
   margin-bottom: 25px;
   font-size: 1.8em;
   font-weight: 500;
@@ -1137,7 +1139,7 @@ article.page .entry-header .entry-thumbnail a {
 }
 article.post .entry-header h1.entry-title,
 article.page .entry-header h1.entry-title {
-  color: #3b3b3b;
+  color: #cb4d27;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.35em;
@@ -1249,7 +1251,7 @@ article.page .author-box .box-content {
 }
 article.post .author-box .box-content .box-title,
 article.page .author-box .box-content .box-title {
-  color: #3b3b3b;
+  color: #cb4d27;
   font-size: 1.25em;
   line-height: 1.1em;
   font-weight: 500;
@@ -1452,7 +1454,7 @@ article.page.post-with-thumbnail-icon .entry-main {
   clear: both;
 }
 .entry-content a {
-  color: #248cc8;
+  color: #2aa198;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -1616,7 +1618,7 @@ article.page.post-with-thumbnail-icon .entry-main {
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-  color: #444444;
+  color: #2aa198;
   margin: 1em 0;
   font-weight: 500;
 }
@@ -1919,25 +1921,25 @@ article.page.post-with-thumbnail-icon .entry-main {
 ----------------------------------------------- */
 #colophon {
   margin-bottom: 20px;
-  background: #2f3033;
+  background: #183a5c;
   padding: 30px;
 }
 #colophon #theme-attribution,
 #colophon #site-info {
   text-align: center;
   margin-top: 25px;
-  color: #aaaaaa;
+  color: #2aa198;
   font-size: 11.5px;
 }
 #colophon #theme-attribution a,
 #colophon #site-info a {
-  color: #dddddd;
+  color: #2aa198;
   text-decoration: none;
   font-weight: 500;
 }
 body.layout-full {
   /* Use the same color as the footer */
-  background-color: #2f3033;
+  background-color: #183a5c;
 }
 .layout-full #colophon {
   margin-bottom: 0;
@@ -2246,7 +2248,7 @@ body.layout-full {
 #secondary .widget .widget-title,
 #footer-widgets .widget .widget-title {
   font-size: 15px;
-  color: #3b3b3b;
+  color: #cb4d27;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -2521,7 +2523,7 @@ body.layout-full {
   margin-top: -0.5em;
 }
 .widget_circleicon-widget .circle-icon-box h4 {
-  color: #3b3b3b;
+  color: #cb4d27;
   font-weight: bold;
   font-size: 17px;
   margin-bottom: 0.8em;
@@ -2539,7 +2541,7 @@ body.layout-full {
 .widget_circleicon-widget .circle-icon-box a.more-button {
   display: block;
   text-decoration: none;
-  color: #3b3b3b;
+  color: #cb4d27;
   font-weight: bold;
   font-size: 13px;
 }
@@ -2916,7 +2918,7 @@ body.layout-full {
   left: 160px;
 }
 #header-sidebar .widget_nav_menu ul.menu > li > ul.sub-menu {
-  border-top: 2px solid #00bcff;
+  border-top: 2px solid #cb4d27;
 }
 #header-sidebar .widget_nav_menu ul.menu li:hover > ul.sub-menu {
   display: block;
@@ -2966,7 +2968,7 @@ body.layout-full {
 .vantage-carousel-title {
   font-size: 14px;
   font-weight: bold;
-  color: #3b3b3b;
+  color: #cb4d27;
   text-transform: uppercase;
   line-height: 1em;
 }
@@ -3246,7 +3248,7 @@ body.layout-full {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 .woocommerce #page-wrapper h1.page-title {
-  color: #3b3b3b;
+  color: #cb4d27;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.35em;
@@ -3258,7 +3260,7 @@ body.layout-full {
 }
 .woocommerce #page-wrapper .product h1.entry-title {
   font-size: 22px;
-  color: #3b3b3b;
+  color: #cb4d27;
   margin-bottom: 20px;
 }
 .woocommerce #page-wrapper .product h1.entry-title a {
@@ -3283,7 +3285,7 @@ body.layout-full {
   margin: 0 2% 30px 0;
 }
 .woocommerce #page-wrapper .woocommerce-message {
-  border-top-color: #00bcff;
+  border-top-color: #cb4d27;
 }
 .woocommerce #page-wrapper .woocommerce-message a.button {
   margin-top: -5px;
@@ -3371,12 +3373,12 @@ body.layout-full {
   border-left: solid 1px #007ebd;
   border-right: solid 1px #007ebd;
   border-bottom: solid 1px #0077b4;
-  background: #00bcff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00aaeb), color-stop(1, #00bcff));
-  background: -ms-linear-gradient(bottom, #00aaeb, #00bcff);
-  background: -moz-linear-gradient(center bottom, #00aaeb 0%, #00bcff 100%);
-  background: -o-linear-gradient(#00bcff, #00aaeb);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00bcff', endColorstr='#00aaeb', GradientType=0);
+  background: #cb4d27;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00aaeb), color-stop(1, #cb4d27));
+  background: -ms-linear-gradient(bottom, #00aaeb, #cb4d27);
+  background: -moz-linear-gradient(center bottom, #00aaeb 0%, #cb4d27 100%);
+  background: -o-linear-gradient(#cb4d27, #00aaeb);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb4d27', endColorstr='#00aaeb', GradientType=0);
 }
 .woocommerce .button.alt:hover,
 .woocommerce .button.alt:active,
