@@ -1,0 +1,52 @@
+---
+title: 'php[tek] Open Spaces - User Groups and Community Building'
+date: '2016-05-25 12:47:10'
+layout: post
+slug: phptek-open-spaces-user-groups
+categories:
+    - 'Conferences'
+    - 'User Groups'
+    - 'Community'
+tags: {  }
+---
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        <h2>php[tek] Open Spaces - User Groups and Community Building</h2>
+        <p>
+            Open Spaces sessions are very similar to unconference sessions. They are ad hoc sessions where anyone can sign up for a topic and lead a discussion.
+        </p>
+        <p>
+            At my very first php[tek] conference in 2014 <a href="https://twitter.com/dragonbe" target="_blank">Michelangelo van Dam</a> held an Open Spaces
+            session about User Groups. As I was already a User Group leader I joined and was excited to be able to speak in person with so many other individuals
+            who were also running user groups as well as people interested in starting their own User Groups. Michelangelo and others also did this again in at php[tek]
+            2015 and again I participated and was excited to share knowledge about User Groups.
+        </p>
+        <p>
+            At php[tek] 2016 Michelangelo was not able to attend
+            so I mentioned doing a User Group session to <a href="https://twitter.com/cspruck" target="_blank">Chris Spruck</a> from AtlantaPHP,
+            <a href="https://twitter.com/sammyk" target="_blank">Sammy K.</a> from Chicago PHP, and <a href="https://twitter.com/ramsey" target="_blank">Ben Ramsey</a>
+            from Nashvile PHP.
+        </p>
+        <p>
+            Ben Ramsey had the idea of streaming the Open Spaces via google hangouts. Below is the recorded version of our session. I hope you enjoy it as I certainly
+            enjoyed being able to host the session. Thanks to everyone that joined us at php[tek], Ben for being our cameraman, and others that watched live and contributed during the event.
+        </p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HH2X5dkmmsI" frameborder="0" allowfullscreen></iframe>
+        </p>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>
+
