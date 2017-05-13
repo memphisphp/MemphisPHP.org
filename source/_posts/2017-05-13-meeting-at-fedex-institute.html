@@ -1,0 +1,34 @@
+---
+title: 'Now meeting at the Fedex Institute of Technology'
+date: '2017-05-13 12:47:10'
+layout: post
+slug: meeting-at-fedex-institute
+categories:
+    - 'Meet Ups'
+    - 'Community'
+tags: {  }
+---
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        <h2>Now meeting at the Fedex Institute of Technology</h2>
+        <p>
+            Starting with our May 23rd Meet up we will be meeting at the FedEx Institute of Technology at 356 Patterson St
+            in Room 225. Thanks to the FIT for hosting us as we look forward to using the venue and connecting with
+            University of Memphis students interested in PHP!
+        </p>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>
+
