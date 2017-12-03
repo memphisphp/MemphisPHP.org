@@ -1,0 +1,44 @@
+---
+title: '#memtech 2017 Holiday Party December 16th'
+date: '2017-12-03 8:47:10'
+layout: post
+slug: memtech-holiday-party-2017
+categories:
+    - 'Meet Ups'
+    - 'Community'
+tags: {  }
+---
+<article class="post type-post status-publish format-standard entry">
+    <header class="entry-header">
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        </h1>
+    </header>
+    <div class="entry-content">
+        <h2>December 16th is the #memtech Holiday Party</h2>
+        <p>
+            Tis the season to come out from behind our computer screens and be merry! Join us at the Fox & Hound to drink, eat, and play pool. Sign up for the gift exchange at https://www.elfster.com/exchange/view/24747732/aa4124/
+        </p>
+        <p>
+            Wear your ugliest holiday sweater and worst holiday hat. There will be a prize for the worst (best?) of each, as well as a raffle for door prizes.
+            Arrive by 7pm to participate in the contests! <a href="https://www.meetup.com/memphis-technology-user-groups/events/244376276/" target="blank">RSVP on meetup</a>.
+        </p>
+        <p>
+            Sponsored by:
+            VACO (http://www.vaco.com/memphis)
+            Tech901 (http://tech901.org/)
+            CrossBrowserTesting.com (http://www.crossbrowsertesting.com/)
+            Cook Systems (www.cooksys.com)
+        </p>
+        <h3><a href="https://www.meetup.com/memphis-technology-user-groups/events/244376276/" target="blank">RSVP on meetup</a></h3>
+    </div>
+    {% if post.meta.tags %}
+    <p class="tags">
+        Tags:
+        {% for tag in post.meta.tags %}
+        <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    {% endif %}
+</article>
+
